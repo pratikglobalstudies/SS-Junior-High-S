@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratik Global Studies | PGS</title>
+<meta name="description" content="Pratik Global Studies - Railway, SSC, UP Government and Pharmacy exam preparation, notes, PYQ and mock tests.">
+
+<style>
+:root {
+  --blue:#0d47a1;
+  --light:#1976d2;
+  --yellow:#ffeb3b;
+  --dark:#101b2d;
+  --bg:#f4f7fc;
+  --white:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:#172033;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+header{
+  background:var(--dark);
+  color:white;
+  padding:13px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-icon{
+  background:var(--yellow);
+  color:var(--blue);
+  font-weight:900;
+  padding:8px 11px;
+  border-radius:9px;
+  font-size:22px;
+}
+.logo h2{font-size:19px}
+.logo small{display:block;color:#cbd5e1;font-size:11px}
+nav{display:flex;gap:17px;flex-wrap:wrap}
+nav a{font-size:13px;color:white}
+nav a:hover{color:var(--yellow)}
+.hero{
+  background:linear-gradient(120deg,#0d47a1,#1976d2);
+  color:white;
+  text-align:center;
+  padding:65px 18px;
+}
+.hero h1{font-size:clamp(27px,5vw,43px);line-height:1.2}
+.hero h1 span{color:var(--yellow)}
+.hero p{margin:15px auto;max-width:650px;color:#e4edff}
+.btn{
+  display:inline-block;
+  padding:11px 19px;
+  border-radius:7px;
+  background:var(--yellow);
+  color:#102b59;
+  font-weight:bold;
+  margin:7px 4px;
+  border:0;
+  cursor:pointer;
+}
+.btn-outline{
+  background:transparent;
+  color:white;
+  border:1px solid white;
+}
+.container{max-width:1150px;margin:auto;padding:35px 18px}
+.section-title{text-align:center;margin-bottom:23px}
+.section-title h2{color:var(--blue);font-size:27px}
+.section-title p{color:#64748b;font-size:14px}
+.search{
+  width:100%;
+  max-width:550px;
+  display:block;
+  margin:0 auto 25px;
+  padding:13px 15px;
+  border:1px solid #ccd5e3;
+  border-radius:8px;
+  font-size:15px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:17px;
+}
+.card{
+  background:white;
+  border:1px solid #e3e9f2;
+  padding:21px;
+  border-radius:12px;
+  box-shadow:0 3px 12px #0d47a10b;
+  transition:.2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 7px 20px #0d47a119}
+.card .symbol{font-size:29px;margin-bottom:8px}
+.card h3{color:var(--blue);margin-bottom:7px}
+.card p{font-size:13px;color:#64748b;margin-bottom:12px}
+.card a,.text-link{
+  display:inline-block;
+  color:#0d47a1;
+  font-size:13px;
+  font-weight:bold;
+  margin:4px 8px 4px 0;
+}
+.tag{
+  display:inline-block;
+  font-size:10px;
+  background:#e8f1ff;
+  color:#0d47a1;
+  padding:4px 8px;
+  border-radius:20px;
+  margin-bottom:8px;
+}
+.notice{
+  background:#fff9d9;
+  border-left:4px solid #e6bd00;
+  padding:15px;
+  border-radius:7px;
+  font-size:14px;
+  margin:20px 0;
+}
+.common-box{
+  background:white;
+  padding:22px;
+  border-radius:12px;
+  border:1px solid #e3e9f2;
+}
+.common-box a{
+  display:inline-block;
+  background:#edf4ff;
+  color:#0d47a1;
+  padding:9px 13px;
+  border-radius:6px;
+  margin:5px;
+  font-size:13px;
+  font-weight:bold;
+}
+.update{
+  padding:12px 0;
+  border-bottom:1px solid #e5eaf1;
+  font-size:14px;
+}
+footer{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+}
+footer a{color:var(--yellow);margin:5px}
+.whatsapp{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  background:#168b50;
+  color:white;
+  padding:12px 17px;
+  border-radius:30px;
+  font-weight:bold;
+  box-shadow:0 4px 12px #0003;
+  z-index:99;
+}
+@media(max-width:650px){
+  header{justify-content:center}
+  nav{justify-content:center;gap:12px}
+  .hero{padding:48px 15px}
+  .container{padding:27px 14px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">PGS</div>
+    <div>
+      <h2>PRATIK GLOBAL STUDIES</h2>
+      <small>Government Exam Preparation Portal</small>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#railway">Railway</a>
+    <a href="#ssc">SSC</a>
+    <a href="#up">UP Exams</a>
+    <a href="#pharmacy">Pharmacy</a>
+    <a href="#study">Study Material</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Welcome to <span>Pratik Global Studies</span></h1>
+  <p>
+    Your Learning Platform for Railway, SSC, UP Government
+    and Pharmacy Competitive Exams.
+  </p>
+  <a href="#exams" class="btn">Explore Exams</a>
+  <a href="https://www.youtube.com/@pratikglobalstudies"
+     target="_blank" class="btn btn-outline">YouTube Channel</a>
+</section>
+
+<section class="container" id="exams">
+  <div class="section-title">
+    <h2>Choose Your Examination</h2>
+    <p>Select your exam and start preparation.</p>
+  </div>
+
+  <input class="search" id="examSearch"
+    type="search" placeholder="Search your exam...">
+
+  <div class="grid" id="examCards">
+
+    <div class="card exam-card" id="railway">
+      <div class="symbol">🚆</div>
+      <span class="tag">Priority 01</span>
+      <h3>Railway Exams</h3>
+      <p>Prepare for Railway Recruitment Board examinations.</p>
+      <a href="#railway-material">Explore Railway →</a>
+    </div>
+
+    <div class="card exam-card" id="ssc">
+      <div class="symbol">🏛️</div>
+      <span class="tag">Priority 02</span>
+      <h3>SSC Exams</h3>
+      <p>Preparation for Staff Selection Commission examinations.</p>
+      <a href="#ssc-material">Explore SSC →</a>
+    </div>
+
+    <div class="card exam-card" id="up">
+      <div class="symbol">📚</div>
+      <span class="tag">Priority 03</span>
+      <h3>UP Government Exams</h3>
+      <p>Prepare for Uttar Pradesh government recruitment.</p>
+      <a href="#up-material">Explore UP Exams →</a>
+    </div>
+
+    <div class="card exam-card" id="pharmacy">
+      <div class="symbol">💊</div>
+      <span class="tag">Priority 04</span>
+      <h3>Pharmacy Exams</h3>
+      <p>Pharmacy-related government recruitment preparation.</p>
+      <a href="#pharmacy-material">Explore Pharmacy →</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="container" id="railway-material">
+  <div class="section-title">
+    <h2>🚆 Railway Examination</h2>
+    <p>Choose your Railway exam.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>RRB NTPC</h3>
+      <p>Graduate and Undergraduate Level</p>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+      <a href="#mock">Mock Test</a>
+    </div>
+    <div class="card">
+      <h3>RRB Group D</h3>
+      <p>Railway Level 1 Recruitment</p>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+      <a href="#mock">Mock Test</a>
+    </div>
+    <div class="card">
+      <h3>RRB ALP</h3>
+      <p>Assistant Loco Pilot</p>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+    <div class="card">
+      <h3>RRB Technician</h3>
+      <p>Technician Recruitment</p>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="ssc-material">
+  <div class="section-title">
+    <h2>🏛️ SSC Examination</h2>
+    <p>Choose your SSC exam.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>SSC CGL</h3>
+      <p>Combined Graduate Level</p>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+      <a href="#mock">Mock Test</a>
+    </div>
+    <div class="card">
+      <h3>SSC CHSL</h3>
+      <p>Combined Higher Secondary Level</p>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+    <div class="card">
+      <h3>SSC MTS</h3>
+      <p>Multi Tasking Staff</p>
+      <a href="#study">Study Material</a>
+      <a href="#mock">Mock Test</a>
+    </div>
+    <div class="card">
+      <h3>SSC GD</h3>
+      <p>Constable Recruitment</p>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="up-material">
+  <div class="section-title">
+    <h2>📚 UP Government Exams</h2>
+    <p>Uttar Pradesh recruitment preparation.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>UPSSSC PET</h3>
+      <a href="#study">Study Material</a>
+      <a href="#mock">Mock Test</a>
+    </div>
+    <div class="card">
+      <h3>UPPSC RO/ARO</h3>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+    <div class="card">
+      <h3>UP Police</h3>
+      <a href="#study">Study Material</a>
+      <a href="#mock">Mock Test</a>
+    </div>
+    <div class="card">
+      <h3>UP Lekhpal</h3>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="pharmacy-material">
+  <div class="section-title">
+    <h2>💊 Pharmacy Government Exams</h2>
+    <p>Special preparation for Pharmacy graduates.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Drug Inspector</h3>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+    <div class="card">
+      <h3>Government Pharmacist</h3>
+      <a href="#study">Study Material</a>
+      <a href="#mock">Mock Test</a>
+    </div>
+    <div class="card">
+      <h3>Hospital Pharmacist</h3>
+      <a href="#study">Study Material</a>
+      <a href="#pyq">PYQ</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="study">
+  <div class="section-title">
+    <h2>📖 Common Study Material</h2>
+    <p>Common subjects useful for multiple examinations.</p>
+  </div>
+  <div class="common-box">
+    <a href="#">Indian History</a>
+    <a href="#">Indian Geography</a>
+    <a href="#">Indian Polity</a>
+    <a href="#">Indian Economy</a>
+    <a href="#">General Science</a>
+    <a href="#">Mathematics</a>
+    <a href="#">Reasoning</a>
+    <a href="#">English</a>
+    <a href="#">Hindi</a>
+    <a href="#">Computer Knowledge</a>
+    <a href="#">Static GK</a>
+    <a href="#">Current Affairs</a>
+  </div>
+  <div class="notice">
+    <strong>Note:</strong> Subject links are sample placeholders.
+    Add your Blogger notes or PDF links in place of #.
+  </div>
+</section>
+
+<section class="container" id="pyq">
+  <div class="section-title">
+    <h2>📝 Previous Year Questions</h2>
+    <p>Practice actual previous examination questions.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Railway PYQ</h3>
+      <p>NTPC, Group D and other Railway papers.</p>
+      <a href="#">Open Questions →</a>
+    </div>
+    <div class="card">
+      <h3>SSC PYQ</h3>
+      <p>CGL, CHSL, MTS and GD questions.</p>
+      <a href="#">Open Questions →</a>
+    </div>
+    <div class="card">
+      <h3>UP Exam PYQ</h3>
+      <p>UPSSSC and UPPSC previous papers.</p>
+      <a href="#">Open Questions →</a>
+    </div>
+    <div class="card">
+      <h3>Pharmacy PYQ</h3>
+      <p>Drug Inspector and Pharmacist questions.</p>
+      <a href="#">Open Questions →</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="mock">
+  <div class="section-title">
+    <h2>🎯 Online Mock Tests</h2>
+    <p>Test your preparation and improve your performance.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Railway Mock Test</h3>
+      <p>Chapter-wise and full-length practice tests.</p>
+      <a href="#">Start Test →</a>
+    </div>
+    <div class="card">
+      <h3>SSC Mock Test</h3>
+      <p>Practice examination-level questions.</p>
+      <a href="#">Start Test →</a>
+    </div>
+    <div class="card">
+      <h3>UP Exams Mock Test</h3>
+      <p>Practice for UP recruitment examinations.</p>
+      <a href="#">Start Test →</a>
+    </div>
+    <div class="card">
+      <h3>Pharmacy Mock Test</h3>
+      <p>Practice Pharmacy subject questions.</p>
+      <a href="#">Start Test →</a>
+    </div>
+  </div>
+</section>
+
+<section class="container" id="updates">
+  <div class="section-title">
+    <h2>🔔 Latest Updates</h2>
+    <p>Exam notifications, results and important announcements.</p>
+  </div>
+  <div class="card">
+    <div class="update">📌 Add latest Railway recruitment updates here.</div>
+    <div class="update">📌 Add SSC examination updates here.</div>
+    <div class="update">📌 Add UP Government vacancy updates here.</div>
+    <div class="update">📌 Add Pharmacy recruitment updates here.</div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-title">
+    <h2>🎥 Video Lectures</h2>
+    <p>Learn through PGS YouTube classes.</p>
+  </div>
+  <div class="card" style="text-align:center">
+    <div class="symbol">▶️</div>
+    <h3>Pratik Global Studies</h3>
+    <p>Watch educational videos, live classes and exam preparation lectures.</p>
+    <a class="btn" href="https://www.youtube.com/@pratikglobalstudies"
+       target="_blank">Visit YouTube Channel</a>
+  </div>
+</section>
+
+<section class="container" id="contact">
+  <div class="section-title">
+    <h2>Contact PGS</h2>
+    <p>For study material, classes and enquiries.</p>
+  </div>
+  <div class="card" style="text-align:center">
+    <h3>Pratik Global Studies</h3>
+    <p>Connect with us for educational updates and enquiries.</p>
+    <a class="btn" href="https://wa.me/919653063675"
+       target="_blank">WhatsApp Enquiry</a>
+    <a class="btn" href="https://www.youtube.com/@pratikglobalstudies"
+       target="_blank">YouTube</a>
+  </div>
+</section>
+
+<footer>
+  <h3>PRATIK GLOBAL STUDIES</h3>
+  <p>Study Smart. Prepare Better. Achieve Your Goal.</p>
+  <p>© 2026 PGS. All Rights Reserved.</p>
+  <a href="#home">Back to Top ↑</a>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919653063675"
+   target="_blank">WhatsApp</a>
+
+<script>
+const search = document.getElementById("examSearch");
+const cards = document.querySelectorAll(".exam-card");
+
+search.addEventListener("input", function(){
+  const value = this.value.toLowerCase();
+  cards.forEach(card => {
+    card.style.display =
+      card.innerText.toLowerCase().includes(value) ? "" : "none";
+  });
+});
+</script>
+
+</body>
+</html>
