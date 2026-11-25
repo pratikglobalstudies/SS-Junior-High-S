@@ -5,18 +5,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pratik Global Studies | PGS</title>
-<meta name="description" content="Pratik Global Studies - Railway, SSC, UP Government and Pharmacy exam preparation,11 notes, PYQ and mock tests.">
+<meta name="description" content="PGS Government Exam Preparation - Railway, SSC, UP Government and Pharmacy Exams">
 
 <style>
-:root {
+:root{
   --blue:#0d47a1;
   --light:#1976d2;
   --yellow:#ffeb3b;
   --dark:#101b2d;
   --bg:#f4f7fc;
-  --white:#ffffff;
+  --white:#fff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
   font-family:Arial,sans-serif;
   background:var(--bg);
@@ -27,12 +28,12 @@ a{text-decoration:none;color:inherit}
 header{
   background:var(--dark);
   color:white;
-  padding:13px 6%;
+  padding:13px 5%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:15px;
   flex-wrap:wrap;
+  gap:14px;
   position:sticky;
   top:0;
   z-index:100;
@@ -42,13 +43,13 @@ header{
   background:var(--yellow);
   color:var(--blue);
   font-weight:900;
+  font-size:23px;
   padding:8px 11px;
-  border-radius:9px;
-  font-size:22px;
+  border-radius:8px;
 }
-.logo h2{font-size:19px}
-.logo small{display:block;color:#cbd5e1;font-size:11px}
-nav{display:flex;gap:17px;flex-wrap:wrap}
+.logo h2{font-size:18px}
+.logo small{font-size:11px;color:#cbd5e1}
+nav{display:flex;gap:14px;flex-wrap:wrap}
 nav a{font-size:13px;color:white}
 nav a:hover{color:var(--yellow)}
 .hero{
@@ -57,37 +58,26 @@ nav a:hover{color:var(--yellow)}
   text-align:center;
   padding:65px 18px;
 }
-.hero h1{font-size:clamp(27px,5vw,43px);line-height:1.2}
+.hero h1{font-size:clamp(28px,5vw,44px);line-height:1.2}
 .hero h1 span{color:var(--yellow)}
-.hero p{margin:15px auto;max-width:650px;color:#e4edff}
+.hero p{max-width:650px;margin:15px auto;color:#e4edff}
 .btn{
   display:inline-block;
-  padding:11px 19px;
-  border-radius:7px;
   background:var(--yellow);
   color:#102b59;
+  padding:11px 18px;
+  border-radius:7px;
   font-weight:bold;
-  margin:7px 4px;
-  border:0;
-  cursor:pointer;
+  margin:6px 3px;
 }
-.btn-outline{
-  background:transparent;
-  color:white;
-  border:1px solid white;
-}
-.container{max-width:1150px;margin:auto;padding:35px 18px}
-.section-title{text-align:center;margin-bottom:23px}
+.btn-outline{background:transparent;color:white;border:1px solid white}
+.container{max-width:1150px;margin:auto;padding:38px 18px}
+.section-title{text-align:center;margin-bottom:24px}
 .section-title h2{color:var(--blue);font-size:27px}
-.section-title p{color:#64748b;font-size:14px}
+.section-title p{font-size:14px;color:#64748b}
 .search{
-  width:100%;
-  max-width:550px;
-  display:block;
-  margin:0 auto 25px;
-  padding:13px 15px;
-  border:1px solid #ccd5e3;
-  border-radius:8px;
+  width:100%;max-width:550px;display:block;margin:0 auto 25px;
+  padding:13px;border:1px solid #ccd5e3;border-radius:8px;
   font-size:15px;
 }
 .grid{
@@ -103,33 +93,25 @@ nav a:hover{color:var(--yellow)}
   box-shadow:0 3px 12px #0d47a10b;
   transition:.2s;
 }
-.card:hover{transform:translateY(-3px);box-shadow:0 7px 20px #0d47a119}
-.card .symbol{font-size:29px;margin-bottom:8px}
-.card h3{color:var(--blue);margin-bottom:7px}
+.card:hover{transform:translateY(-3px)}
+.card h3{color:var(--blue);margin-bottom:8px}
 .card p{font-size:13px;color:#64748b;margin-bottom:12px}
-.card a,.text-link{
+.card a{
   display:inline-block;
-  color:#0d47a1;
+  color:var(--blue);
   font-size:13px;
   font-weight:bold;
-  margin:4px 8px 4px 0;
+  margin:5px 8px 5px 0;
 }
+.symbol{font-size:30px;margin-bottom:8px}
 .tag{
   display:inline-block;
-  font-size:10px;
   background:#e8f1ff;
-  color:#0d47a1;
-  padding:4px 8px;
+  color:var(--blue);
+  font-size:10px;
+  padding:4px 9px;
   border-radius:20px;
-  margin-bottom:8px;
-}
-.notice{
-  background:#fff9d9;
-  border-left:4px solid #e6bd00;
-  padding:15px;
-  border-radius:7px;
-  font-size:14px;
-  margin:20px 0;
+  margin-bottom:9px;
 }
 .common-box{
   background:white;
@@ -140,25 +122,30 @@ nav a:hover{color:var(--yellow)}
 .common-box a{
   display:inline-block;
   background:#edf4ff;
-  color:#0d47a1;
+  color:var(--blue);
   padding:9px 13px;
   border-radius:6px;
   margin:5px;
   font-size:13px;
   font-weight:bold;
 }
-.update{
-  padding:12px 0;
-  border-bottom:1px solid #e5eaf1;
-  font-size:14px;
+.notice{
+  background:#fff9d9;
+  border-left:4px solid #e6bd00;
+  padding:14px;
+  border-radius:7px;
+  margin-top:18px;
+  font-size:13px;
 }
+.update{padding:12px 0;border-bottom:1px solid #e5eaf1;font-size:14px}
 footer{
   background:var(--dark);
   color:white;
   text-align:center;
   padding:30px 15px;
 }
-footer a{color:var(--yellow);margin:5px}
+footer p{font-size:13px;color:#cbd5e1;margin:6px}
+footer a{color:var(--yellow)}
 .whatsapp{
   position:fixed;
   right:18px;
@@ -168,20 +155,21 @@ footer a{color:var(--yellow);margin:5px}
   padding:12px 17px;
   border-radius:30px;
   font-weight:bold;
-  box-shadow:0 4px 12px #0003;
   z-index:99;
+  box-shadow:0 4px 12px #0003;
 }
 @media(max-width:650px){
   header{justify-content:center}
-  nav{justify-content:center;gap:12px}
+  nav{justify-content:center;gap:11px}
   .hero{padding:48px 15px}
-  .container{padding:27px 14px}
+  .container{padding:28px 14px}
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
   <div class="logo">
     <div class="logo-icon">PGS</div>
@@ -202,25 +190,28 @@ footer a{color:var(--yellow);margin:5px}
   </nav>
 </header>
 
+<!-- HOME -->
 <section class="hero" id="home">
   <h1>Welcome to <span>Pratik Global Studies</span></h1>
   <p>
-    Your Learning Platform for Railway, SSC, UP Government
-    and Pharmacy Competitive Exams.
+    Prepare for Railway, SSC, UP Government and Pharmacy
+    Competitive Examinations with PGS.
   </p>
   <a href="#exams" class="btn">Explore Exams</a>
-  <a href="https://www.youtube.com/@pratikglobalstudies"
-     target="_blank" class="btn btn-outline">YouTube Channel</a>
+  <a id="youtubeTop" href="#" target="_blank" class="btn btn-outline">
+    YouTube Classes
+  </a>
 </section>
 
+<!-- EXAM CATEGORIES -->
 <section class="container" id="exams">
   <div class="section-title">
     <h2>Choose Your Examination</h2>
-    <p>Select your exam and start preparation.</p>
+    <p>Select your examination and start preparation.</p>
   </div>
 
-  <input class="search" id="examSearch"
-    type="search" placeholder="Search your exam...">
+  <input type="search" class="search" id="examSearch"
+  placeholder="Search Railway, SSC, UP, Pharmacy...">
 
   <div class="grid" id="examCards">
 
@@ -228,7 +219,7 @@ footer a{color:var(--yellow);margin:5px}
       <div class="symbol">🚆</div>
       <span class="tag">Priority 01</span>
       <h3>Railway Exams</h3>
-      <p>Prepare for Railway Recruitment Board examinations.</p>
+      <p>RRB NTPC, Group D, ALP and Technician.</p>
       <a href="#railway-material">Explore Railway →</a>
     </div>
 
@@ -236,7 +227,7 @@ footer a{color:var(--yellow);margin:5px}
       <div class="symbol">🏛️</div>
       <span class="tag">Priority 02</span>
       <h3>SSC Exams</h3>
-      <p>Preparation for Staff Selection Commission examinations.</p>
+      <p>SSC CGL, CHSL, MTS and GD.</p>
       <a href="#ssc-material">Explore SSC →</a>
     </div>
 
@@ -244,7 +235,7 @@ footer a{color:var(--yellow);margin:5px}
       <div class="symbol">📚</div>
       <span class="tag">Priority 03</span>
       <h3>UP Government Exams</h3>
-      <p>Prepare for Uttar Pradesh government recruitment.</p>
+      <p>UPSSSC PET, RO/ARO, Police and Lekhpal.</p>
       <a href="#up-material">Explore UP Exams →</a>
     </div>
 
@@ -252,257 +243,319 @@ footer a{color:var(--yellow);margin:5px}
       <div class="symbol">💊</div>
       <span class="tag">Priority 04</span>
       <h3>Pharmacy Exams</h3>
-      <p>Pharmacy-related government recruitment preparation.</p>
+      <p>Drug Inspector and Government Pharmacist.</p>
       <a href="#pharmacy-material">Explore Pharmacy →</a>
     </div>
 
   </div>
 </section>
 
+<!-- RAILWAY -->
 <section class="container" id="railway-material">
   <div class="section-title">
     <h2>🚆 Railway Examination</h2>
-    <p>Choose your Railway exam.</p>
+    <p>Railway Recruitment Board Preparation</p>
   </div>
   <div class="grid">
+
     <div class="card">
       <h3>RRB NTPC</h3>
       <p>Graduate and Undergraduate Level</p>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
-      <a href="#mock">Mock Test</a>
+      <a data-link="ntpcNotes" href="#">Study Material</a>
+      <a data-link="ntpcPYQ" href="#">PYQ</a>
+      <a data-link="ntpcMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>RRB Group D</h3>
       <p>Railway Level 1 Recruitment</p>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
-      <a href="#mock">Mock Test</a>
+      <a data-link="groupDNotes" href="#">Study Material</a>
+      <a data-link="groupDPYQ" href="#">PYQ</a>
+      <a data-link="groupDMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>RRB ALP</h3>
       <p>Assistant Loco Pilot</p>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="alpNotes" href="#">Study Material</a>
+      <a data-link="alpPYQ" href="#">PYQ</a>
+      <a data-link="alpMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>RRB Technician</h3>
       <p>Technician Recruitment</p>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="technicianNotes" href="#">Study Material</a>
+      <a data-link="technicianPYQ" href="#">PYQ</a>
+      <a data-link="technicianMock" href="#">Mock Test</a>
     </div>
+
   </div>
 </section>
 
+<!-- SSC -->
 <section class="container" id="ssc-material">
   <div class="section-title">
     <h2>🏛️ SSC Examination</h2>
-    <p>Choose your SSC exam.</p>
+    <p>Staff Selection Commission Preparation</p>
   </div>
   <div class="grid">
+
     <div class="card">
       <h3>SSC CGL</h3>
       <p>Combined Graduate Level</p>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
-      <a href="#mock">Mock Test</a>
+      <a data-link="cglNotes" href="#">Study Material</a>
+      <a data-link="cglPYQ" href="#">PYQ</a>
+      <a data-link="cglMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>SSC CHSL</h3>
       <p>Combined Higher Secondary Level</p>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="chslNotes" href="#">Study Material</a>
+      <a data-link="chslPYQ" href="#">PYQ</a>
+      <a data-link="chslMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>SSC MTS</h3>
       <p>Multi Tasking Staff</p>
-      <a href="#study">Study Material</a>
-      <a href="#mock">Mock Test</a>
+      <a data-link="mtsNotes" href="#">Study Material</a>
+      <a data-link="mtsPYQ" href="#">PYQ</a>
+      <a data-link="mtsMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>SSC GD</h3>
       <p>Constable Recruitment</p>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="gdNotes" href="#">Study Material</a>
+      <a data-link="gdPYQ" href="#">PYQ</a>
+      <a data-link="gdMock" href="#">Mock Test</a>
     </div>
+
   </div>
 </section>
 
+<!-- UP EXAMS -->
 <section class="container" id="up-material">
   <div class="section-title">
     <h2>📚 UP Government Exams</h2>
-    <p>Uttar Pradesh recruitment preparation.</p>
+    <p>Uttar Pradesh Government Recruitment</p>
   </div>
   <div class="grid">
+
     <div class="card">
       <h3>UPSSSC PET</h3>
-      <a href="#study">Study Material</a>
-      <a href="#mock">Mock Test</a>
+      <a data-link="petNotes" href="#">Study Material</a>
+      <a data-link="petPYQ" href="#">PYQ</a>
+      <a data-link="petMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>UPPSC RO/ARO</h3>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="roaroNotes" href="#">Study Material</a>
+      <a data-link="roaroPYQ" href="#">PYQ</a>
+      <a data-link="roaroMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>UP Police</h3>
-      <a href="#study">Study Material</a>
-      <a href="#mock">Mock Test</a>
+      <a data-link="policeNotes" href="#">Study Material</a>
+      <a data-link="policePYQ" href="#">PYQ</a>
+      <a data-link="policeMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>UP Lekhpal</h3>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="lekhpalNotes" href="#">Study Material</a>
+      <a data-link="lekhpalPYQ" href="#">PYQ</a>
+      <a data-link="lekhpalMock" href="#">Mock Test</a>
     </div>
+
   </div>
 </section>
 
+<!-- PHARMACY -->
 <section class="container" id="pharmacy-material">
   <div class="section-title">
     <h2>💊 Pharmacy Government Exams</h2>
-    <p>Special preparation for Pharmacy graduates.</p>
+    <p>Pharmacy Recruitment Preparation</p>
   </div>
   <div class="grid">
+
     <div class="card">
       <h3>Drug Inspector</h3>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="diNotes" href="#">Study Material</a>
+      <a data-link="diPYQ" href="#">PYQ</a>
+      <a data-link="diMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>Government Pharmacist</h3>
-      <a href="#study">Study Material</a>
-      <a href="#mock">Mock Test</a>
+      <a data-link="pharmacistNotes" href="#">Study Material</a>
+      <a data-link="pharmacistPYQ" href="#">PYQ</a>
+      <a data-link="pharmacistMock" href="#">Mock Test</a>
     </div>
+
     <div class="card">
       <h3>Hospital Pharmacist</h3>
-      <a href="#study">Study Material</a>
-      <a href="#pyq">PYQ</a>
+      <a data-link="hospitalNotes" href="#">Study Material</a>
+      <a data-link="hospitalPYQ" href="#">PYQ</a>
+      <a data-link="hospitalMock" href="#">Mock Test</a>
     </div>
+
   </div>
 </section>
 
+<!-- COMMON STUDY MATERIAL -->
 <section class="container" id="study">
   <div class="section-title">
     <h2>📖 Common Study Material</h2>
-    <p>Common subjects useful for multiple examinations.</p>
+    <p>Common Subjects for Multiple Competitive Exams</p>
   </div>
+
   <div class="common-box">
-    <a href="#">Indian History</a>
-    <a href="#">Indian Geography</a>
-    <a href="#">Indian Polity</a>
-    <a href="#">Indian Economy</a>
-    <a href="#">General Science</a>
-    <a href="#">Mathematics</a>
-    <a href="#">Reasoning</a>
-    <a href="#">English</a>
-    <a href="#">Hindi</a>
-    <a href="#">Computer Knowledge</a>
-    <a href="#">Static GK</a>
-    <a href="#">Current Affairs</a>
+    <a data-link="history" href="#">Indian History</a>
+    <a data-link="geography" href="#">Indian Geography</a>
+    <a data-link="polity" href="#">Indian Polity</a>
+    <a data-link="economy" href="#">Indian Economy</a>
+    <a data-link="science" href="#">General Science</a>
+    <a data-link="maths" href="#">Mathematics</a>
+    <a data-link="reasoning" href="#">Reasoning</a>
+    <a data-link="english" href="#">English</a>
+    <a data-link="hindi" href="#">Hindi</a>
+    <a data-link="computer" href="#">Computer Knowledge</a>
+    <a data-link="staticGK" href="#">Static GK</a>
+    <a data-link="currentAffairs" href="#">Current Affairs</a>
   </div>
+
   <div class="notice">
-    <strong>Note:</strong> Subject links are sample placeholders.
-    Add your Blogger notes or PDF links in place of #.
+    Common Study Material को Railway, SSC और UP Exams में उपयोग होने वाले
+    विषयों के अनुसार व्यवस्थित किया गया है।
   </div>
 </section>
 
+<!-- PYQ -->
 <section class="container" id="pyq">
   <div class="section-title">
     <h2>📝 Previous Year Questions</h2>
-    <p>Practice actual previous examination questions.</p>
+    <p>Practice Previous Examination Questions</p>
   </div>
   <div class="grid">
     <div class="card">
       <h3>Railway PYQ</h3>
-      <p>NTPC, Group D and other Railway papers.</p>
-      <a href="#">Open Questions →</a>
+      <p>NTPC, Group D and Railway Papers</p>
+      <a data-link="railwayPYQAll" href="#">Open Questions →</a>
     </div>
     <div class="card">
       <h3>SSC PYQ</h3>
-      <p>CGL, CHSL, MTS and GD questions.</p>
-      <a href="#">Open Questions →</a>
+      <p>CGL, CHSL, MTS and GD</p>
+      <a data-link="sscPYQAll" href="#">Open Questions →</a>
     </div>
     <div class="card">
-      <h3>UP Exam PYQ</h3>
-      <p>UPSSSC and UPPSC previous papers.</p>
-      <a href="#">Open Questions →</a>
+      <h3>UP Exams PYQ</h3>
+      <p>UPSSSC and UPPSC</p>
+      <a data-link="upPYQAll" href="#">Open Questions →</a>
     </div>
     <div class="card">
       <h3>Pharmacy PYQ</h3>
-      <p>Drug Inspector and Pharmacist questions.</p>
-      <a href="#">Open Questions →</a>
+      <p>Drug Inspector and Pharmacist</p>
+      <a data-link="pharmacyPYQAll" href="#">Open Questions →</a>
     </div>
   </div>
 </section>
 
+<!-- MOCK TEST -->
 <section class="container" id="mock">
   <div class="section-title">
     <h2>🎯 Online Mock Tests</h2>
-    <p>Test your preparation and improve your performance.</p>
+    <p>Practice and Check Your Preparation</p>
   </div>
   <div class="grid">
     <div class="card">
       <h3>Railway Mock Test</h3>
-      <p>Chapter-wise and full-length practice tests.</p>
-      <a href="#">Start Test →</a>
+      <p>Chapter-wise and Full Length Tests</p>
+      <a data-link="railwayMockAll" href="#">Start Test →</a>
     </div>
     <div class="card">
       <h3>SSC Mock Test</h3>
-      <p>Practice examination-level questions.</p>
-      <a href="#">Start Test →</a>
+      <p>SSC Examination Practice</p>
+      <a data-link="sscMockAll" href="#">Start Test →</a>
     </div>
     <div class="card">
       <h3>UP Exams Mock Test</h3>
-      <p>Practice for UP recruitment examinations.</p>
-      <a href="#">Start Test →</a>
+      <p>UP Government Exam Practice</p>
+      <a data-link="upMockAll" href="#">Start Test →</a>
     </div>
     <div class="card">
       <h3>Pharmacy Mock Test</h3>
-      <p>Practice Pharmacy subject questions.</p>
-      <a href="#">Start Test →</a>
+      <p>Pharmacy Subject Practice</p>
+      <a data-link="pharmacyMockAll" href="#">Start Test →</a>
     </div>
   </div>
 </section>
 
+<!-- CURRENT AFFAIRS -->
 <section class="container" id="updates">
   <div class="section-title">
     <h2>🔔 Latest Updates</h2>
-    <p>Exam notifications, results and important announcements.</p>
+    <p>Latest Vacancy, Exam Notifications and Results</p>
   </div>
   <div class="card">
-    <div class="update">📌 Add latest Railway recruitment updates here.</div>
-    <div class="update">📌 Add SSC examination updates here.</div>
-    <div class="update">📌 Add UP Government vacancy updates here.</div>
-    <div class="update">📌 Add Pharmacy recruitment updates here.</div>
+    <div class="update">
+      📌 Railway Recruitment Updates —
+      <a data-link="railwayUpdates" href="#">View Details</a>
+    </div>
+    <div class="update">
+      📌 SSC Recruitment Updates —
+      <a data-link="sscUpdates" href="#">View Details</a>
+    </div>
+    <div class="update">
+      📌 UP Government Vacancy Updates —
+      <a data-link="upUpdates" href="#">View Details</a>
+    </div>
+    <div class="update">
+      📌 Pharmacy Recruitment Updates —
+      <a data-link="pharmacyUpdates" href="#">View Details</a>
+    </div>
+    <div class="update">
+      📌 Current Affairs —
+      <a data-link="currentAffairs" href="#">Read Now</a>
+    </div>
   </div>
 </section>
 
-<section class="container">
+<!-- VIDEO LECTURES -->
+<section class="container" id="videos">
   <div class="section-title">
     <h2>🎥 Video Lectures</h2>
-    <p>Learn through PGS YouTube classes.</p>
+    <p>Learn with Pratik Global Studies</p>
   </div>
   <div class="card" style="text-align:center">
     <div class="symbol">▶️</div>
-    <h3>Pratik Global Studies</h3>
-    <p>Watch educational videos, live classes and exam preparation lectures.</p>
-    <a class="btn" href="https://www.youtube.com/@pratikglobalstudies"
-       target="_blank">Visit YouTube Channel</a>
+    <h3>PGS YouTube Classes</h3>
+    <p>Educational Videos, Live Classes and Exam Preparation.</p>
+    <a id="youtubeVideo" class="btn" href="#" target="_blank">
+      Visit YouTube Channel
+    </a>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section class="container" id="contact">
   <div class="section-title">
     <h2>Contact PGS</h2>
-    <p>For study material, classes and enquiries.</p>
+    <p>For Study Material, Classes and Enquiries</p>
   </div>
   <div class="card" style="text-align:center">
-    <h3>Pratik Global Studies</h3>
+    <h3>PRATIK GLOBAL STUDIES</h3>
     <p>Connect with us for educational updates and enquiries.</p>
-    <a class="btn" href="https://wa.me/919653063675"
-       target="_blank">WhatsApp Enquiry</a>
-    <a class="btn" href="https://www.youtube.com/@pratikglobalstudies"
-       target="_blank">YouTube</a>
+    <a id="whatsappButton" class="btn" href="#" target="_blank">
+      WhatsApp Enquiry
+    </a>
+    <a id="youtubeContact" class="btn" href="#" target="_blank">
+      YouTube Channel
+    </a>
   </div>
 </section>
 
@@ -513,20 +566,171 @@ footer a{color:var(--yellow);margin:5px}
   <a href="#home">Back to Top ↑</a>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919653063675"
-   target="_blank">WhatsApp</a>
+<a id="whatsappFloat" class="whatsapp" href="#" target="_blank">
+  WhatsApp
+</a>
+
+<!-- =================================================
+     LINK SETTINGS
+     APNE LINKS YAHAN ADD KAREIN
+================================================== -->
 
 <script>
+
+// 1. APNE WEBSITE KE LINKS YAHAN ADD KAREIN
+
+const LINKS = {
+
+  // YouTube and WhatsApp
+  youtube: "https://www.youtube.com/@pratikglobalstudies",
+  whatsapp: "https://wa.me/919653063675",
+
+  // RAILWAY
+  ntpcNotes: "",
+  ntpcPYQ: "",
+  ntpcMock: "",
+
+  groupDNotes: "",
+  groupDPYQ: "",
+  groupDMock: "",
+
+  alpNotes: "",
+  alpPYQ: "",
+  alpMock: "",
+
+  technicianNotes: "",
+  technicianPYQ: "",
+  technicianMock: "",
+
+  // SSC
+  cglNotes: "",
+  cglPYQ: "",
+  cglMock: "",
+
+  chslNotes: "",
+  chslPYQ: "",
+  chslMock: "",
+
+  mtsNotes: "",
+  mtsPYQ: "",
+  mtsMock: "",
+
+  gdNotes: "",
+  gdPYQ: "",
+  gdMock: "",
+
+  // UP GOVERNMENT EXAMS
+  petNotes: "",
+  petPYQ: "",
+  petMock: "",
+
+  roaroNotes: "",
+  roaroPYQ: "",
+  roaroMock: "",
+
+  policeNotes: "",
+  policePYQ: "",
+  policeMock: "",
+
+  lekhpalNotes: "",
+  lekhpalPYQ: "",
+  lekhpalMock: "",
+
+  // PHARMACY
+  diNotes: "",
+  diPYQ: "",
+  diMock: "",
+
+  pharmacistNotes: "",
+  pharmacistPYQ: "",
+  pharmacistMock: "",
+
+  hospitalNotes: "",
+  hospitalPYQ: "",
+  hospitalMock: "",
+
+  // COMMON SUBJECTS
+  history: "",
+  geography: "",
+  polity: "",
+  economy: "",
+  science: "",
+  maths: "",
+  reasoning: "",
+  english: "",
+  hindi: "",
+  computer: "",
+  staticGK: "",
+  currentAffairs: "",
+
+  // ALL PYQ
+  railwayPYQAll: "",
+  sscPYQAll: "",
+  upPYQAll: "",
+  pharmacyPYQAll: "",
+
+  // ALL MOCK TEST
+  railwayMockAll: "",
+  sscMockAll: "",
+  upMockAll: "",
+  pharmacyMockAll: "",
+
+  // UPDATES
+  railwayUpdates: "",
+  sscUpdates: "",
+  upUpdates: "",
+  pharmacyUpdates: ""
+
+};
+
+
+// 2. LINKS AUTOMATICALLY WEBSITE PAR LAG JAYENGE
+
+document.querySelectorAll("[data-link]").forEach(link => {
+
+  const key = link.getAttribute("data-link");
+  const url = LINKS[key];
+
+  if(url && url.trim() !== ""){
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+  }else{
+    link.href = "#";
+    link.addEventListener("click", function(event){
+      event.preventDefault();
+      alert("This content will be available soon.");
+    });
+  }
+
+});
+
+
+// 3. YOUTUBE LINKS
+["youtubeTop","youtubeVideo","youtubeContact"].forEach(id=>{
+  document.getElementById(id).href = LINKS.youtube;
+});
+
+
+// 4. WHATSAPP LINKS
+["whatsappButton","whatsappFloat"].forEach(id=>{
+  document.getElementById(id).href = LINKS.whatsapp;
+});
+
+
+// 5. EXAM SEARCH
 const search = document.getElementById("examSearch");
 const cards = document.querySelectorAll(".exam-card");
 
-search.addEventListener("input", function(){
+search.addEventListener("input",function(){
   const value = this.value.toLowerCase();
-  cards.forEach(card => {
+
+  cards.forEach(card=>{
     card.style.display =
       card.innerText.toLowerCase().includes(value) ? "" : "none";
   });
 });
+
 </script>
 
 </body>
